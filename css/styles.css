@@ -1,0 +1,489 @@
+:root {
+  --primary: #2f5d50; /* verde naturaleza */
+  --secondary: #c89b3c; /* dorado mágico */
+  --dark: #1f2933; /* azul oscuro / misterio */
+  --earth: #8b5e3c; /* tierra / tradición */
+  --light: #f5efe6; /* crema */
+  --white: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--light);
+  color: var(--dark);
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  background: var(--white);
+  border-bottom: 2px solid var(--secondary);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  background-image: url('../images/Logo.png');
+  background-size: cover;
+  min-height: 80px;
+  width: 200px;
+  margin: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+}
+
+.header-menu a {
+  margin: 0px 10px 0px 0px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.header-menu a.active {
+  color: var(--secondary);
+  font-weight: bold;
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 4px;
+}
+
+.header-menu a:hover {
+  color: var(--earth);
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.lang-btn:hover,
+.active-lang {
+  color: var(--secondary);
+}
+
+/* HERO */
+.hero {
+  background-size: cover;
+  background-position: center;
+  max-width: 100vw;
+  height: 700px;
+  color: var(--white);
+  text-align: center;
+  align-content: center;
+  padding: 60px 20px;
+}
+
+.home-hero {
+  background:
+    linear-gradient(rgba(31, 41, 51, 0.35), rgba(31, 41, 51, 0.35)),
+    url('../images/Raquira.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.realismo-hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('../images/Pueblo.jpg');
+}
+
+.hero-tittle {
+  margin: auto;
+  font-weight: bold;
+  font-size: 2.5rem;
+  width: 90%;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hero-button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background: var(--secondary);
+  color: var(--dark);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.hero-button:hover {
+  background: var(--earth);
+  color: var(--white);
+}
+
+#welcome-message {
+  margin-top: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--light);
+}
+
+.intro,
+.card,
+.culture-text,
+.page-title {
+  background: var(--white);
+}
+
+.cards,
+.section-title,
+.slider-section {
+  background: #eadfce;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+
+  background: white;
+
+  min-width: 180px;
+
+  border: 1px solid #ccc;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+
+  padding: 12px;
+
+  text-decoration: none;
+
+  color: black;
+}
+
+.dropdown-menu a:hover {
+  background: #f0f0f0;
+}
+
+/* INTRO */
+.intro {
+  text-align: center;
+  padding: 30px;
+}
+
+.intro-tittle {
+  font-size: 1.8rem;
+}
+
+.intro-text {
+  margin: auto;
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+/* CARDS */
+.cards {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 0 20px 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  width: 30%;
+  border: 1px solid #ccc;
+  padding-bottom: 15px;
+  border-radius: 8px;
+}
+
+.card-text {
+  padding: 0;
+  margin: 0;
+  min-height: 120px;
+  margin-bottom: 10px;
+  width: 90%;
+  font-size: 1.2rem;
+}
+
+.card-text h3 {
+  margin: 0;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card-image {
+  min-width: 90%;
+  max-height: 360px;
+  background: #fff;
+  border: 1px solid #bbb;
+  scroll-snap-align: start;
+  border-radius: 10px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #eee;
+}
+
+/* Página Realismo mágico */
+
+.hero-small {
+  padding: 70px 20px;
+}
+
+.hero-small h2 {
+  margin-bottom: 8px;
+}
+
+.content-section {
+  padding: 50px;
+}
+
+/* Slider de imágenes */
+
+.slider-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+  background: #eee;
+}
+
+.slider {
+  width: 70%;
+  max-width: 700px;
+  height: 320px;
+  border: 1px solid #bbb;
+  background: #ddd;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slider-btn {
+  font-size: 2rem;
+  padding: 10px 18px;
+  border: none;
+  background: #5c4a2d;
+  color: white;
+  cursor: pointer;
+}
+
+.slider-btn:hover {
+  background: #8b5e3c;
+}
+
+/* Página Colombia mágica */
+
+.page-title {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+}
+
+.page-title h2 {
+  margin-bottom: 5px;
+}
+
+.section-title {
+  text-align: center;
+  padding: 10px;
+  background: #eee;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.culture-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 280px;
+  border-bottom: 1px solid #ccc;
+}
+
+.culture-block.reverse {
+  direction: rtl;
+}
+
+.culture-block.reverse > * {
+  direction: ltr;
+}
+
+.culture-text {
+  padding: 50px 60px;
+  background: #fff;
+}
+
+.culture-text h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #888;
+  padding-bottom: 10px;
+}
+
+.culture-text p {
+  line-height: 1.6;
+}
+
+.culture-image {
+  background: #ddd;
+  overflow: hidden;
+}
+
+.culture-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .header-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem;
+  }
+
+  .cards {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card-container {
+    margin: auto;
+    padding: 0;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+  }
+
+  .card {
+    background: white;
+    width: 100%;
+  }
+
+  .slider-section {
+    gap: 10px;
+    padding: 20px 10px;
+  }
+
+  .slider {
+    width: 100%;
+    height: 220px;
+  }
+
+  .slider-btn {
+    font-size: 1.5rem;
+    padding: 8px 12px;
+  }
+
+  /* Página Colombia mágica */
+
+  .culture-block,
+  .culture-block.reverse {
+    display: block;
+  }
+
+  .culture-text {
+    padding: 30px 20px;
+  }
+
+  .culture-image {
+    height: 220px;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+
+  footer .active {
+    font-size: 1rem;
+  }
+
+  .active {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #1f5809;
+    border-bottom: 2px solid #1f5809;
+  }
+
+  .lang {
+    font-size: 1rem;
+  }
+
+  .lang .active {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-tittle {
+    overflow: auto;
+    max-width: 80%;
+    font-size: 2rem;
+  }
+
+  .hero-button {
+    max-width: 80%;
+  }
+
+  .card-container {
+    width: 100vw;
+  }
+
+  .lang {
+    font-size: 1rem;
+  }
+
+  .lang .active {
+    font-size: 1rem;
+  }
+}

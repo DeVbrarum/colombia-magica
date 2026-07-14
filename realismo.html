@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realismo mágico | Colombia Mágica</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+      <div class="logo"></div>
+      <nav class="header-menu">
+    
+        <a href="index.html" data-i18n="navHome">Inicio</a>
+    
+        <a href="realismo.html" class="active" data-i18n="navRealismo">Realismo mágico</a>
+    
+        <div class="dropdown">
+    
+          <a href="colombia.html" id="dropdownBtn" data-i18n="navColombia">
+            Colombia mágica ▾
+          </a>
+    
+          <div class="dropdown-menu">
+    
+            <a href="colombia.html#naturaleza" data-i18n="navNatural">Naturaleza</a>
+    
+            <a href="colombia.html#simbolos" data-i18n="navSymbol">Símbolos</a>
+    
+            <a href="colombia.html#cultura" data-i18n="navCulture">Cultura</a>
+    
+          </div>
+    
+        </div>
+    
+      </nav>
+      <div class="lang">
+        <button id="btn-es" class="lang-btn active-lang">ES</button>
+        |
+        <button id="btn-en" class="lang-btn">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero realismo-hero">
+      <h2 class="hero-tittle" data-i18n="realismoTitle">El realismo mágico</h2>
+      <p class="hero-text" data-i18n="realismoSubtitle">Una forma de percibir la realidad</p>
+    </section>
+
+    <section class="intro">
+      <h3 class="intro-tittle" data-i18n="realismoConceptTitle">Una mirada conceptual</h3>
+      <p class="intro-text" data-i18n="realismoConceptText">
+        El realismo mágico es una forma de representar la realidad donde lo cotidiano
+        se mezcla con elementos extraordinarios de manera natural.
+      </p>
+    </section>
+
+<section class="slider-section" aria-label="Slider visual sobre realismo mágico">
+  <button class="slider-btn" id="prevBtn" aria-label="Imagen anterior">‹</button>
+
+  <div class="slider">
+    <img id="sliderImage" src="images/PajaroColom.jpg" alt="Paisaje colombiano con atmósfera mágica">
+  </div>
+
+  <button class="slider-btn" id="nextBtn" aria-label="Imagen siguiente">›</button>
+</section>
+
+    <section class="content-section">
+      <h3 data-i18n="realismoContextTitle">Contexto en Colombia</h3>
+
+      <p data-i18n="realismoContextText1">
+        En este enfoque, lo mágico no se percibe como algo extraño, sino como parte de la vida diaria,
+        permitiendo una visión más amplia y simbólica del mundo.        
+      </p>
+      <p data-i18n="realismoContextText2">
+        En Colombia, el realismo mágico se refleja en la relación con la naturaleza, las tradiciones y la vida cotidiana. La riqueza cultural y la diversidad de sus paisajes crean escenarios donde lo real puede percibirse como extraordinario, convirtiendo la experiencia cultural en algo único para una audiencia global.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Colombia Mágica | Cultura Colombia
+  </footer>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

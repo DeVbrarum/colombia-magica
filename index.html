@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia Mágica</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    
+    <header>
+      <div class="header">
+        <div class="logo"></div>
+        <nav class="header-menu">
+        
+          <a href="index.html" class="active" data-i18n="navHome">Inicio</a>
+        
+          <a href="realismo.html" data-i18n="navRealismo">Realismo mágico</a>
+        
+          <div class="dropdown">
+        
+            <a href="colombia.html" id="dropdownBtn" data-i18n="navColombia">
+              Colombia mágica ▾
+            </a>
+        
+            <div class="dropdown-menu">
+        
+              <a href="colombia.html#naturaleza" data-i18n="navNatural">Naturaleza</a>
+        
+              <a href="colombia.html#simbolos" data-i18n="navSymbol">Símbolos</a>
+        
+              <a href="colombia.html#cultura" data-i18n="navCulture">Cultura</a>
+        
+            </div>
+        
+          </div>
+        
+        </nav>
+        <div class="lang">
+          <button id="btn-es" class="lang-btn active-lang">ES</button>
+          |
+          <button id="btn-en" class="lang-btn">EN</button>
+        </div>
+      </div>
+    </header>
+
+  <main>
+    <!-- HERO -->
+     <section class="hero home-hero">
+        <h2 class="hero-tittle" data-i18n="homeTitle">Colombia: Una cultura donde lo cotidiano se vuelve extraordinario</h2>
+        <p class="hero-text" data-i18n="homeSubtitle">Descubre una cultura única</p>
+        <p id="welcome-message"></p>
+        <a href="realismo.html">
+        <button class="hero-button" data-i18n="homeButton">Descubrir la experiencia</button>
+        </a>
+     </section>
+
+     <!-- INTRO -->
+      <section class="intro">
+        <h3 class="intro-tittle" data-i18n="homeIntroTitle">Una mirada cultural</h3>
+        <p class="intro-text" data-i18n="homeIntroText">
+          El realismo mágico forma parte de la identidad cultural colombiana, donde la naturaleza,
+          las tradiciones y la vida cotidiana pueden percibirse como extraordinarias.
+        </p>
+      </section>
+
+      <!-- CARDS -->
+       <section class="cards">
+        <h3 data-i18n="homeCards">Elementos culturales</h3>
+
+        <div class="card-container">
+
+          <div class="card">
+            <div class="card-text">
+              <h3 data-i18n="homeTittleNatur">Naturaleza</h3>
+              <p data-i18n="homeTextNatur">
+                Selvas, montañas y paisajes llenos de vida
+              </p>
+            </div>                   
+            <img src="images/Pajaro.jpg" class="card-image" alt="Naturaleza colombiana asociada al imaginario mágico">
+          </div>
+
+          <div class="card">
+            <div class="card-text">
+              <h3 data-i18n="homeTittleSymb">Símbolos</h3>
+              <p data-i18n="homeTextSymb">Elementos culturales como mariposas y tradiciones</p>
+            </div>
+            <img src="images/RanaChoco.jpg" class="card-image" alt="Naturaleza colombiana asociada al imaginario mágico">
+          </div>
+          
+          <div class="card">
+            <div class="card-text">
+              <h3 data-i18n="homeTittleCult">Cultura</h3>
+              <p data-i18n="homeTextCult">Una forma única de ver el mundo</p>
+            </div>
+            <img src="images/Calle sombrilla.jpg" class="card-image" alt="Naturaleza colombiana asociada al imaginario mágico">
+          </div>
+        </div>
+
+        </div>
+       </section>
+      </main>
+
+       <!-- FOOTER -->
+        <footer>
+          <p>© 2026 Colombia Mágica | Cultura Colombia </p>
+        </footer>
+        <script src="./js/script.js"></script>
+  </body>
+</html>
